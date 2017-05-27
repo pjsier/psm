@@ -5,6 +5,6 @@
     @version 1.0
  --%>
 <div id="footer">
-    <strong>Copyright 2012.</strong> Companyname Lorem Ipsum
+    <strong>Copyright 2012, 2013, 2017.</strong> TopCoder, Inc; Solution Guidance Corporation
 </div>
 <!-- #footer -->

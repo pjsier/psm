@@ -15,7 +15,13 @@
             <!-- /#mainContent -->
 
             <div id="footer">
-                <strong>Copyright <fmt:formatDate value="${date}" pattern="yyyy" />.</strong> Companyname Lorem Ipsum
+                <!-- TODO: I don't think this is how copyright actually 
+                     works.  The copyright date(s) should be the union
+                     of the years in which components of the collective
+                     work were actually written.  We can't just
+                     programmatically substitute in today's date and 
+                     assume it's accurate as a copyright date. -->
+                <strong>Copyright <fmt:formatDate value="${date}" pattern="yyyy" />.</strong> TopCoder, Inc; Solution Guidance Corporation
             </div>
             <!-- #footer -->
             <div class="clear"></div>
