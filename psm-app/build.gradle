@@ -1,13 +1,14 @@
-
 buildscript {
     repositories {
         mavenCentral()
         maven {
             url  'http://dl.bintray.com/djmijares/gradle-plugins'
+            url 'https://plugins.gradle.org/m2/'
         }
     }
     dependencies {
         classpath 'com.github.jacobono:gradle-jaxb-plugin:1.3.6'
+        classpath 'gradle.plugin.com.github.jk1:gradle-license-report:0.3.11'
     }
 }
 
@@ -19,6 +20,7 @@ allprojects {
 
 project(':services') {
     apply plugin: 'java'
+    apply plugin: 'com.github.jk1.dependency-license-report'
 
     dependencies {
         compile fileTree(dir: '../cms-portal-services/lib', include: '*.jar', exclude: 'cms-core.jar')
@@ -41,6 +43,7 @@ project(':services') {
 
 project(':cms-business-process') {
     apply plugin: 'java'
+    apply plugin: 'com.github.jk1.dependency-license-report'
     dependencies {
         compile project(path: ':services', configuration: 'archives')
         compile project(path: ':cms-business-model', configuration: 'archives')
@@ -64,6 +67,7 @@ project(':cms-business-process') {
 
 project(':cms-web') {
     apply plugin: 'war'
+    apply plugin: 'com.github.jk1.dependency-license-report'
     dependencies {
         providedCompile project(':services')
         providedCompile fileTree(dir: 'WebContent/WEB-INF/lib')
@@ -74,6 +78,7 @@ project(':cms-web') {
 project(':cms-business-model') {
     apply plugin: 'com.github.jacobono.jaxb'
     apply plugin: 'java'
+    apply plugin: 'com.github.jk1.dependency-license-report'
     compileJava.dependsOn xjc
     System.setProperty('javax.xml.accessExternalSchema', 'file')
 
@@ -110,6 +115,7 @@ project(':cms-business-model') {
 
 project(':cms-portal-services') {
     apply plugin: 'ear'
+    apply plugin: 'com.github.jk1.dependency-license-report'
     dependencies {
         deploy project(path: ':cms-web', configuration: 'archives')
         deploy project(':cms-business-process')
