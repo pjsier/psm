@@ -20,7 +20,6 @@ import java.util.Date;
 
 import gov.medicaid.binders.XMLUtility;
 import gov.medicaid.domain.model.EnrollmentProcess;
-import gov.medicaid.domain.model.EnrollmentType;
 import gov.medicaid.entities.CMSUser;
 import gov.medicaid.entities.EmailTemplate;
 import gov.medicaid.entities.Enrollment;
@@ -105,8 +104,7 @@ public class AcceptedHandler extends GenericHandler {
 
             item.getResults().put("model", model);
             manager.completeWorkItem(item.getId(), item.getResults());
-            EnrollmentType model_enrollment = model.getEnrollment();
-            notificationService.sendEnrollmentNotification(model_enrollment, EmailTemplate.APPROVED_ENROLLMENT);
+            notificationService.sendEnrollmentNotification(model.getEnrollment(), EmailTemplate.APPROVED_ENROLLMENT);
 
             // Issue #215 - add hook for approval
         } catch (PortalServiceException e) {

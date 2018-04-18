@@ -1,4 +1,4 @@
-Dear $registrant.username,
+Dear $submitter,
 
 Thank you for submitting an application through the PSM!  Your
 application is now pending and will be reviewed shortly.

@@ -1,4 +1,4 @@
-Dear $registrant.username,
+Dear $submitter,
 
 Your application for enrollment has been modified.  Please log in to the
 PSM to view the changes.  If you did not make or expect this change,

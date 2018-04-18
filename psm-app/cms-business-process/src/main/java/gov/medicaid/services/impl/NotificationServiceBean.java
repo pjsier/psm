@@ -144,8 +144,8 @@ public class NotificationServiceBean extends BaseService implements Notification
         EmailTemplate emailType
     ) throws PortalServiceException {
       Map<String, Object> vars = new HashMap<String, Object>();
-      String submitter = enrollment.getSubmittedBy();
-      vars.put("submitter", submitter);
+      String contact_name = enrollment.getContactInformation().getName();
+      vars.put("submitter", contact_name);
       String emailAddress = enrollment.getContactInformation().getEmailAddress();
       sendNotification(emailAddress, emailType, vars);
     }
