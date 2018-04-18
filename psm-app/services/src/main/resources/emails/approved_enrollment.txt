@@ -1,4 +1,4 @@
-Dear $registrant.username,
+Dear $submitter,
 
 Congratulations!  Your application for enrollment has been approved.
 
