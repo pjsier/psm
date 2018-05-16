@@ -80,7 +80,7 @@ public class ApplicationsApprovedReportController extends gov.medicaid.controlle
                 csvPrinter.printRecord(
                     enrollment.getTicketId(),
                     enrollment.getCreatedOn(),
-                    enrollment.getLastUpdatedBy().getUserId(),
+                    enrollment.getLastUpdatedBy().getUsername(),
                     enrollment.getStatusDate(),
                     enrollment.getStatus().getDescription()
                     );
