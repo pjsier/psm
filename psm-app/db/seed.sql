@@ -885,11 +885,14 @@ CREATE TABLE enrollments(
   profile_reference_id BIGINT NOT NULL DEFAULT 0,
   reference_timestamp TIMESTAMP WITH TIME ZONE,
   progress_page TEXT,
-  created_by TEXT,
+  created_by TEXT
+    REFERENCES cms_user(user_id),
   created_at TIMESTAMP WITH TIME ZONE,
-  submitted_by TEXT,
+  submitted_by TEXT
+    REFERENCES cms_user(user_id),
   submitted_at TIMESTAMP WITH TIME ZONE,
-  changed_by TEXT,
+  changed_by TEXT
+    REFERENCES cms_user(user_id),
   changed_at TIMESTAMP WITH TIME ZONE,
   change_note TEXT
 );

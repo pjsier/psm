@@ -5,6 +5,7 @@ import org.springframework.web.servlet.ModelAndView
 import gov.medicaid.services.ProviderEnrollmentService
 import javax.servlet.http.HttpServletResponse
 import org.springframework.mock.web.MockHttpServletResponse
+import gov.medicaid.entities.CMSUser
 import gov.medicaid.entities.Enrollment
 import gov.medicaid.entities.EnrollmentStatus
 import spock.lang.Specification
@@ -24,7 +25,7 @@ class ApplicationsApprovedReportControllerTest extends Specification {
         return new Enrollment([
             ticketId: id,
             createdOn: toDate(createdOn),
-            lastUpdatedBy: lastUpdatedBy,
+            lastUpdatedBy: new CMSUser([userId: lastUpdatedBy]),
             statusDate: toDate(statusDate),
             status: new EnrollmentStatus([description: status])
         ])
