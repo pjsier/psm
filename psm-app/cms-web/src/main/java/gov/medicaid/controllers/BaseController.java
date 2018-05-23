@@ -16,6 +16,7 @@
 
 package gov.medicaid.controllers;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import gov.medicaid.controllers.validators.StrictCustomDateEditor;
 import gov.medicaid.interceptors.HandlebarsInterceptor;
@@ -85,6 +86,12 @@ public abstract class BaseController {
             Exception ex
     ) {
         ModelAndView view = new ModelAndView("error");
+        logger.log(Level.SEVERE, ex, () -> String.format(
+                "Exception caught by Spring while handling %s request to %s",
+                request.getMethod(),
+                request.getRequestURL().toString()
+        ));
+        view.addObject("exception", ex);
         HandlebarsInterceptor.addCommonVariables(request, view);
         return view;
     }

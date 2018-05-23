@@ -34,6 +34,7 @@
                         <p style="color: #c00;">
                           An error has been occurred while processing your request, please contact 1-800-1010-2010 for any concerns.
                         </p>
+                        <pre>Exception: ${exception}</pre>
                       </div>
                     </div>
                   </div>
