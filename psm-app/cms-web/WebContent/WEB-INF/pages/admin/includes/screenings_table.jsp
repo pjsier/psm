@@ -47,166 +47,17 @@
   </thead>
 
   <tbody>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-    <tr>
-      <td>03/20/2018</td>
-      <td>1234567893</td>
-      <td>Jane Doe</td>
-      <td>Dentist</td>
-      <td>LEIE</td>
-      <td>Monthly rescreening</td>
-      <td>X Failed [ <a href="#">view</a> ]</td>
-      <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
-    </tr>
-
+    <c:forEach var="screening" items="${screenings}">
+      <tr>
+        <td>${screening.date}</td>
+        <td>${screening.npi}</td>
+        <td>${screening.providerName}</td>
+        <td>${screening.providerType}</td>
+        <td>${screening.screeningType}</td>
+        <td>${screening.reason}</td>
+        <td>${screening.result}</td>
+        <td><a href="#">Auto Screen</a> | <a href="#">Manual Screen</a></td>
+      </tr>
+    </c:forEach>
   </tbody>
 </table>
