@@ -864,6 +864,17 @@ CREATE TABLE contacts(
     REFERENCES addresses(address_id)
 );
 
+INSERT INTO contacts(
+  contact_id
+  /*phone_number,*/
+  /*fax_number,*/
+  /*email,*/
+  /*address_id*/
+) VALUES
+  (1),
+  (2),
+  (3);
+
 INSERT INTO enrollments (
   enrollment_id,
   enrollment_status_code,
@@ -1030,8 +1041,7 @@ CREATE TABLE entities(
   provider_type_code CHARACTER VARYING(2)
     REFERENCES provider_types(code),
   provider_sub_type TEXT,
-  contact_id BIGINT
-    REFERENCES contacts(contact_id),
+  contact_id BIGINT NOT NULL REFERENCES contacts(contact_id),
   background_study_id TEXT,
   background_clearance_date TIMESTAMP WITH TIME ZONE
 );
@@ -1046,26 +1056,26 @@ INSERT INTO entities (
   /* legacy_id, */
   npi,
   /* nonexclusion_verified, */
-  provider_type_code
+  provider_type_code,
   /* provider_sub_type, */
-  /* contact_id, */
+  contact_id
   /* background_study_id */
   /* background_clearance_date */
 ) VALUES
-  (1001, 0, 1001, 'My Private Practice', '1111111112', '05'),
-  (1002, 0, 1002, 'My Private Practice', '1111111112', '06'),
-  (1003, 0, 1003, 'My Private Practice', '1111111112', '07'),
-  (1004, 0, 1004, 'My Private Practice', '1111111112', '08'),
-  (1005, 0, 1005, 'My Private Practice', '1111111112', NULL),
-  (1006, 0, 1006, 'My Private Practice', '1111111112', '10'),
-  (1007, 0, 1007, 'My Private Practice', '1111111112', '11'),
-  (1008, 0, 1008, 'My Private Practice', '1111111112', NULL),
-  (1009, 0, 1009, 'My Private Practice', '1111111112', '13'),
-  (1010, 0, 1010, 'My Private Practice', '1111111112', '14'),
-  (1011, 0, 1011, 'My Private Practice', '1111111112', NULL),
-  (1012, 0, 1012, 'My Private Practice', '1111111112', '16'),
-  (1013, 0, 1013, 'My Private Practice', '1111111112', NULL),
-  (1014, 0, 1014, 'My Private Practice', '1111111112', '17');
+  (1001, 0, 1001, 'My Private Practice', '1111111112', '05', 1),
+  (1002, 0, 1002, 'My Private Practice', '1111111112', '06', 2),
+  (1003, 0, 1003, 'My Private Practice', '1111111112', '07', 3),
+  (1004, 0, 1004, 'My Private Practice', '1111111112', '08', 1),
+  (1005, 0, 1005, 'My Private Practice', '1111111112', NULL, 1),
+  (1006, 0, 1006, 'My Private Practice', '1111111112', '10', 1),
+  (1007, 0, 1007, 'My Private Practice', '1111111112', '11', 1),
+  (1008, 0, 1008, 'My Private Practice', '1111111112', NULL, 1),
+  (1009, 0, 1009, 'My Private Practice', '1111111112', '13', 1),
+  (1010, 0, 1010, 'My Private Practice', '1111111112', '14', 1),
+  (1011, 0, 1011, 'My Private Practice', '1111111112', NULL, 1),
+  (1012, 0, 1012, 'My Private Practice', '1111111112', '16', 1),
+  (1013, 0, 1013, 'My Private Practice', '1111111112', NULL, 1),
+  (1014, 0, 1014, 'My Private Practice', '1111111112', '17', 1);
 
 CREATE TABLE organizations(
   entity_id BIGINT PRIMARY KEY

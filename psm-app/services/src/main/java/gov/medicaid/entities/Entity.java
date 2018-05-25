@@ -97,7 +97,7 @@ public abstract class Entity implements Serializable {
     private String providerSubType;
 
     @ManyToOne
-    @JoinColumn(name = "contact_id")
+    @JoinColumn(name = "contact_id", nullable = false)
     private ContactInformation contactInformation;
 
     /**
